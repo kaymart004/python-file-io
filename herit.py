@@ -17,7 +17,7 @@ def find_heritability_words(input_file, output_file):
         output_file (str): Path to the output file.
     """
     
-    pattern = re.compile(r'\b(herit\w*|herit\w*)\b', re.IGNORECASE)
+    pattern = re.compile(r'\b(inherit\w*|herit\w*)\b', re.IGNORECASE)
 
     with open(input_file, 'r') as infile, open(output_file, 'w') as outfile:
         for line_number, line in enumerate(infile, start=1):
